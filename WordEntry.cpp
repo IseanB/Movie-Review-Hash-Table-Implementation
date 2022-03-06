@@ -6,9 +6,7 @@
 *  note that numAppearances should be set to 1 here
 */
 
-WordEntry::WordEntry(const string &text, int score) : word(text), numAppearances(1), totalScore(score) {
-	 
-}
+WordEntry::WordEntry(const string &text, int score) : word(text), numAppearances(1), totalScore(score) {}
 
 /* addNewAppearance
 * input integer that is a new score for a word that is

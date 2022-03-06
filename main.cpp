@@ -18,6 +18,7 @@ int main() {
 	    exit(1);
 	}
 	
+	// cout << "Test1" << endl;
 	//create hash table
 	HashTable table(20071);
 	
@@ -36,16 +37,17 @@ int main() {
 	        else {
 	            sub = line.substr(0, line.size() - 1);
 	        }
+			// cout << "Test 4" << endl;
 	        table.put(sub, score); // insert string with the score
 	    }
 	}
-	
+	// cout << "Test2" << endl;
 	// after data is entered in hash function
 	// prompt user for a new movie review
 	while(message.length() > 0) {
 	    cout << "enter a review -- Press return to exit: " << endl;
 	    getline(cin, message);
-	
+
 	    // used for calculating the average
 	    double sum = 0;
 	    int count = 0;
@@ -68,7 +70,6 @@ int main() {
 	        sum += table.getAverage(sub);
 	        ++count;
 	    }
-	
 	    if (message.size() > 0) {
 	    	sentiment = sum / count;
 	        cout << "The review has an average value of " << sentiment << endl;

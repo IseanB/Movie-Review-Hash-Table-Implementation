@@ -9,9 +9,10 @@
 using namespace std;
 
 class HashTable {
-
+//isean is a slowpoke and he confuses me all the time like JAHDKFJHAJKDHF sometimes i just wanna get a hug but other times im like hmm maybe if i give him a fat slap then he'll LISTEN TO ME
  private:
 	list<WordEntry> *hashTable;
+	// bool *occupiedTable;
 	int size;
 
  public:
